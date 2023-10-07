@@ -42,7 +42,7 @@ ul{
     color: #212121;
 }
 
-.solapa{
+li{
     height: 8vh;
     width: 14vw;
     background-color: #FFE966;
@@ -92,24 +92,9 @@ ul{
     width: 45vw;
     height: 80vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: top;
+    align-items: left;
     border: 1px solid black;
-}
-
-h2{
-    display: inline-block;
-    width: 40vw;
-    height: fit-content;
-    font-size: 30px;
-
-}
-
-p{
-    display: inline-block;
-    width: 40vw;
-    height: fit-content;
 }
 
 .item2b {
@@ -117,7 +102,6 @@ p{
     width: 45vw;
     height: 80vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
@@ -130,45 +114,9 @@ footer{
     width: 100vw;
     color: #191919 ;
     font-size: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    align-content: stretch;
+    align-items: end;
+    justify-content: right;
 }
 
-h3{
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 40vw;
-    height: 13vh;
-    font-size: 30px;
-}
-
-.flinks{
-    background-color: orange;
-    width: 65vw;
-    height:30px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-content: start;
-    font-size: 20px;
-}
-
-li{
-    width: 20vw;
-    align-items: center;
-    justify-self: center;
-    display: block;
-    text-align: center;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.pie{
-    background-color: blue;
-    
-}
