@@ -1,9 +1,12 @@
+/* Blanqueo de formatos por defecto */
 *{
     height: 0px;
     width: 0px;
     margin: 0px;
     padding: 0px;
 }
+
+/* Imagen de Fondo */
 body{
     background-image: url("../img/Backround.jpg");
     background-size: cover;
@@ -16,6 +19,7 @@ body{
     height: 200vh;
 }
 
+/* Título de página */
 h1{
     background-color: rgba(255,230,153,0.62);
     border-top: 2px solid black;
@@ -32,7 +36,8 @@ h1{
     align-content: center;
     justify-content: center;
 }
-    
+
+/* Barra de navegación */
 ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
@@ -42,7 +47,8 @@ ul{
     color: #212121;
 }
 
-li{
+/* Componentes de barra de navegación */
+.solapa{
     height: 8vh;
     width: 14vw;
     background-color: #FFE966;
@@ -55,6 +61,24 @@ li{
     justify-content: center;
 }
 
+.solapa:link, .solapa:visited, .solapa:active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 8vh;
+}
+
+.solapa:hover{
+    background-color: orange  /*rgb(191, 144, 0,0.9)*/;
+}
+
+#pintura{
+    background-color: rgb(191, 144, 0,0.9);
+}
+
+/* Todo el main */
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -65,48 +89,133 @@ li{
     margin-top: 55vh;
 }
 
+/* Última Cena */
 .item1{
-    background-color: rgb(191, 144, 0,0.9);
-    border: 1px solid black;
+    background-color:black;
+    border: 5px solid rgb(191, 144, 0,0.9);
     margin-top: 15vh;
     margin-bottom: 10vh;
-    font-size: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    width: 60vw;
-    height: 60vh;
+    width: 80vw;
+    height: 70vh;
 }
 
+.ultima_cena{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 70vh;
+}
+
+.item1b{
+    display: inline-flex;
+    flex-wrap:wrap;
+    background-color: black;
+    width: 30vw;
+    height: 70vh;
+    color:white;
+    font-size: 14px;
+}
+
+p1{
+    width: 30vw;
+    height: 70vh;
+    font-size: 30px;
+    padding-top: 15vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Sección inferior */
 .item2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 96vw;
+    width: 98vw;
     height: 90vh;
     font-size: 30px;
 }
 
+/* Artículo "La Dama del Armiño" */
 .item2a {
-    background-color:rgb(230, 230, 230,0.9);
-    width: 45vw;
-    height: 80vh;
-    display: flex;
-    justify-content: top;
-    align-items: left;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    justify-content:start;
+    align-content: flex-start;
+    width: 46vw;
+    height: 70vh;
+    background-color: rgb(230, 230, 230,0.9);
     border: 1px solid black;
 }
+.dama{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 60vh;
+    margin-top: 35px;
+    margin-left: 22px;
+    margin-right: 22px;
+    justify-content: start;
+}
 
+.fondo-item2a{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 25vw;
+    height: 70vh;
+    justify-content:center;
+    align-items: start;
+}
+
+.DA{
+    font-size: 25px;
+    width: fit-content;
+}
+
+/* Títulos secundarios */
+h2{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: fit-content;
+    font-size: 30px;
+    text-align:center;
+    padding-top: 10px;
+}
+
+p2{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 60vh;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Párrafos de artículos */
+p{
+    display: inline-block;
+    width: 40vw;
+    height: fit-content;
+}
+
+/* Artículo "Mona Lisa" */
 .item2b {
     background-color:rgb(230, 230, 230,0.9);
-    width: 45vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 46vw;
+    height: 70vh;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    justify-content: start;
+    align-items: flex-start;
     border: 1px solid black;
 }
 
+/* Pie de página */
 footer{
     background-color: rgba(255, 230, 153, 0.9);
     border-top: 2px solid black;
@@ -114,9 +223,80 @@ footer{
     width: 100vw;
     color: #191919 ;
     font-size: 25px;
-    display: grid;
-    align-content: stretch;
-    align-items: end;
-    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Títulos terciarios */
+h3{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 40vw;
+    height: 13vh;
+    font-size: 30px;
+}
+
+/* Links de pie de página */
+.flinks{
+    background-color: rgb(247, 203, 71);
+    width: 65vw;
+    height:30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: start;
+    font-size: 20px;
+}
+
+/* Items de lista (apuntado a las del pie de página) */
+li{
+    width: 20vw;
+    align-items: center;
+    justify-self: center;
+    display: block;
+    text-align: left;
+}
+
+/* Links del pie de pagina */
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+}
+.link-pie:hover {
+    color: rgb(0, 0, 190);
+}
+
+/* Texto inferior del pie de página */
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 5vh;
+    font-size: 20px;
+    justify-content:space-around;
+    align-content:flex-end;
+}
+
+/* Texto de la izquierda */
+.pie-text1{
+    display: inline-flex;
+    width: 45vw;
+    font-weight: bold;
+    height: fit-content;
+}
+
+/* Texto de la derecha */
+.pie-text2{
+    display: inline-flex;
+    width: 45vw;
+    height: fit-content;
+    font-weight: bold;
+    justify-content: end;
+}

@@ -70,9 +70,12 @@ ul{
     height: 8vh;
 }
 
-#inicio:hover{
+.solapa:hover{
     background-color: orange  /*rgb(191, 144, 0,0.9)*/;
+}
 
+#inicio{
+    background-color: rgb(191, 144, 0,0.9);
 }
 
 /* Todo el main */
@@ -177,7 +180,7 @@ h3{
 
 /* Links de pie de página */
 .flinks{
-    background-color: orange;
+    background-color: rgb(247, 203, 71);
     width: 65vw;
     height:30px;
     display: inline-flex;
