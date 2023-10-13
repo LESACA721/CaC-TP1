@@ -45,31 +45,77 @@ nav ul{
     color: black;
 }
 
-section{
-    background-color: rgba(255, 255, 255, 0.89);
-    border: solid black;
+
+section article h2{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+#imagen-section{
+    width: 35vh;
+    height: 30vw;
+    background-color: rgba(27, 17, 17, 0.973);
+    margin-right: 15px;
+    
+}
+section{ 
     display: flex;
     flex-direction: row;
-    opacity: 100;
-}
-section article p{
-    font-weight: bold;
-}
-
-section img{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
 }
 .articulo_section {
    
-    justify-content: center;
-    font-size: 25px;
-   
-    
+    justify-content: right;
+    font-size: 30px;
+    background-color: rgb(27, 17, 17);
+    height: 60vh;
+    width: 80vw;
+    color: white;
 }
+div article p{
+    font-size: 25px;
+}
+section{
+    background-color: rgba(227, 233, 176, 0);
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   padding: 10px;
+   border: 2px solid black;
+} 
+
+.coleccion-wind{
+background-color: #58300fef;
+padding: 20px;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+width: 45%;
+margin-right: 10px
+}
+h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.observacion-exploracion{
+background-color: #45460ae1;
+padding: 20px;
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+width: 45%;
+margin-left: 10px;
+}
+div img{
+    width: 45vw;
+    height: 40vh;
+}
+#diseño{
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .articulo_fotos{
     
     display: flex;
