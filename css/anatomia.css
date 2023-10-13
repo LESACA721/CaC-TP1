@@ -44,6 +44,15 @@ nav ul{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    background-color: rgba(212, 185, 28, 0.911);
+}
+a:active{
+    color: white;
+}
+a:focus{
+    background-color: rgba(212, 185, 28, 0.911);
+}
 
 
 section article h2{
