@@ -11,7 +11,7 @@ h1{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     display: flex;
-    height: 40vh;
+    height: 20vh;
     width: 100vw;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -21,8 +21,9 @@ h1{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    /* word-wrap: break-word; */
 }
-nav ul{
+nav ul {
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
     justify-content: space-evenly;
@@ -196,13 +197,16 @@ footer div{
    font-size: 30px;
 
 }
+div ul li{
+    list-style: none;
+}
 
 .item1{
     font-size: 20px;
     display: inline-flex;
     justify-content: space-around;
     width: 30vw;
-    list-style: none;
+  
 
     
 }
@@ -211,7 +215,7 @@ footer div{
     display: inline-flex;
     justify-content:space-around;
     width: 30vw;
-    list-style: none;
+    
    
 }
 .item3{
@@ -234,7 +238,7 @@ footer div{
 .contenedor-lista-footer{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    list-style: none;
+    
 }
 .contenedor-pie{
     display: grid;

@@ -33,13 +33,36 @@ h1{
     justify-content: center;
 }
     
-ul{
+ ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
     justify-content: space-evenly;
     height: 8vh;
     width: 100vw;
     color: #212121;
+}
+.li{
+    height: 8vh;
+    width: 20vw;
+    background-color: #FFE966;
+    border: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: rgba(212, 185, 28, 0.911);
+}
+a:active{
+    color: white;
+}
+a:focus{
+    background-color: rgba(212, 185, 28, 0.911);
 }
 
 .solapa{
