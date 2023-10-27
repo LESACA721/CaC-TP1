@@ -159,7 +159,6 @@ div ul a {
     
 }
 
-
 .item1{
     font-size: 20px;
     display: inline-flex;
@@ -174,9 +173,9 @@ div ul a {
     display: inline-flex;
     justify-content:space-around;
     width: 30vw;
-    
-   
+    list-style: none;
 }
+
 .item3{
     font-size: 20px;
     display: inline-flex;
@@ -190,15 +189,15 @@ div ul a {
 }
 .item5{
     font-size: 20px;
-    /* display: grid; */
-   
+    /* display: grid; */   
 }
+
 .contenedor-lista-footer{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     list-style: none;
-   
 }
+
 .contenedor-pie{
     display: grid;
     grid-template-columns: 50% 50%;

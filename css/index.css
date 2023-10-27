@@ -1,9 +1,12 @@
+/* Blanqueo de formatos por defecto */
 *{
     height: 0px;
     width: 0px;
     margin: 0px;
     padding: 0px;
 }
+
+/* Imagen de Fondo */
 body{
     background-image: url("../img/Backround.jpg");
     background-size: cover;
@@ -16,6 +19,7 @@ body{
     height: 200vh;
 }
 
+/* Título de página */
 h1{
     background-color: rgba(255,230,153,0.62);
     border-top: 2px solid black;
@@ -32,8 +36,9 @@ h1{
     align-content: center;
     justify-content: center;
 }
-    
- ul{
+
+/* Barra de navegación */
+ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
     justify-content: space-evenly;
@@ -65,6 +70,7 @@ a:focus{
     background-color: rgba(212, 185, 28, 0.911);
 }
 
+/* Componentes de barra de navegación */
 .solapa{
     height: 8vh;
     width: 14vw;
@@ -78,6 +84,24 @@ a:focus{
     justify-content: center;
 }
 
+.solapa:link, .solapa:visited, .solapa:active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 8vh;
+}
+
+.solapa:hover{
+    background-color: orange  /*rgb(191, 144, 0,0.9)*/;
+}
+
+#inicio{
+    background-color: rgb(191, 144, 0,0.9);
+}
+
+/* Todo el main */
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +112,7 @@ a:focus{
     margin-top: 55vh;
 }
 
+/* Carrousel */
 .item1{
     background-color: rgb(191, 144, 0,0.9);
     border: 1px solid black;
@@ -101,6 +126,7 @@ a:focus{
     height: 60vh;
 }
 
+/* Sección inferior */
 .item2 {
     display: flex;
     justify-content: space-around;
@@ -110,6 +136,7 @@ a:focus{
     font-size: 30px;
 }
 
+/* Artículo "Novedades" */
 .item2a {
     background-color:rgb(230, 230, 230,0.9);
     width: 45vw;
@@ -121,6 +148,7 @@ a:focus{
     border: 1px solid black;
 }
 
+/* Títulos secundarios */
 h2{
     display: inline-block;
     width: 40vw;
@@ -129,12 +157,14 @@ h2{
 
 }
 
+/* Párrafos de artículos */
 p{
     display: inline-block;
     width: 40vw;
     height: fit-content;
 }
 
+/* Artículo "Gran inauguración" */
 .item2b {
     background-color:rgb(230, 230, 230,0.9);
     width: 45vw;
@@ -146,6 +176,7 @@ p{
     border: 1px solid black;
 }
 
+/* Pie de página */
 footer{
     background-color: rgba(255, 230, 153, 0.9);
     border-top: 2px solid black;
@@ -159,6 +190,7 @@ footer{
     justify-content: center;
 }
 
+/* Títulos terciarios */
 h3{
     display: inline-flex;
     flex-wrap: wrap;
@@ -169,8 +201,9 @@ h3{
     font-size: 30px;
 }
 
+/* Links de pie de página */
 .flinks{
-    background-color: orange;
+    background-color: rgb(247, 203, 71);
     width: 65vw;
     height:30px;
     display: inline-flex;
@@ -180,18 +213,52 @@ h3{
     font-size: 20px;
 }
 
+/* Items de lista (apuntado a las del pie de página) */
 li{
     width: 20vw;
     align-items: center;
     justify-self: center;
     display: block;
-    text-align: center;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    text-align: left;
 }
 
-.pie{
-    background-color: blue;
-    
+/* Links del pie de pagina */
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
 }
+.link-pie:hover {
+    color: rgb(0, 0, 190);
+}
+
+/* Texto inferior del pie de página */
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 5vh;
+    font-size: 20px;
+    justify-content:space-around;
+    align-content:flex-end;
+}
+
+/* Texto de la izquierda */
+.pie-text1{
+    display: inline-flex;
+    width: 45vw;
+    font-weight: bold;
+    height: fit-content;
+}
+
+/* Texto de la derecha */
+.pie-text2{
+    display: inline-flex;
+    width: 45vw;
+    height: fit-content;
+    font-weight: bold;
+    justify-content: end;
+}
+
