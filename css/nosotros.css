@@ -1,25 +1,23 @@
 /* Blanqueo de formatos por defecto */
 *{
-    height: 0px;
-    width: 0px;
+    /* height: 0px;
+    width: 0px; */
     margin: 0px;
     padding: 0px;
 }
 
-/* Imagen de Fondo */
 body{
     background-image: url("../img/Backround.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #FFE699;
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
     width: 100vw;
-    height: 200vh;
+    height: 220vh;
 }
 
-/* Título de página */
 h1{
     background-color: rgba(255,230,153,0.62);
     border-top: 2px solid black;
@@ -36,9 +34,7 @@ h1{
     align-content: center;
     justify-content: center;
 }
-
-/* Barra de navegación */
-ul{
+nav ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
     justify-content: space-evenly;
@@ -47,8 +43,14 @@ ul{
     color: #212121;
 }
 
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+}
 
-/* Componentes de barra de navegación */
 .solapa{
     height: 8vh;
     width: 14vw;
@@ -75,83 +77,103 @@ ul{
     background-color: orange;
 }
 
-#inicio{
+#nosotros{
     background-color: rgb(191, 144, 0,0.9);
 }
 
-/* Todo el main */
-.container{
+/* Cuerpo de página */
+section{
+    background-color: rgba(255, 255, 255, 0.89);
+    border: solid black;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: top;
-    height: 200vh;
-    width: 100vw;
-    margin-top: 40vh;
+    flex-direction: row;
+    opacity: 100;
+}
+section article p{
+    font-weight: bold;
 }
 
-/* Carrousel */
-.item1{
-    background-color: rgb(191, 144, 0,0.9);
-    border: 1px solid black;
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
+.Quienes {
+    font-family: 'Poppins', sans-serif;
+}
+
+section img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30vw;
     height: 60vh;
-}
 
-/* Sección inferior */
-.item2 {
+}
+.articulo_section {
+   
+    justify-content: center;
+    font-size: 25px;
+   
+    
+}
+.articulo_fotos{
+    
     display: flex;
+    width: 100vw;
+    
     justify-content: space-around;
-    align-items: center;
-    width: 96vw;
-    height: 90vh;
-    font-size: 30px;
-}
-
-/* Artículo "Novedades" */
-.item2a {
-    background-color:rgb(230, 230, 230,0.9);
-    width: 45vw;
-    height: 80vh;
-    display: flex;
+    margin-top: 25px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+}
+.foto1{
+    background-color: rgb(43, 6, 6);
+    height: 310px;
+    width: 40vh;
     border: 1px solid black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+  
 }
-
-/* Títulos secundarios */
-h2{
-    display: inline-block;
-    width: 40vw;
-    height: fit-content;
-    font-size: 30px;
-
-}
-
-/* Párrafos de artículos */
-p{
-    display: inline-block;
-    width: 40vw;
-    height: fit-content;
-}
-
-/* Artículo "Gran inauguración" */
-.item2b {
-    background-color:rgb(230, 230, 230,0.9);
-    width: 45vw;
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.foto2{
+    background-color: rgb(43, 6, 6);
+    height: 310px;
+    width: 40vh;
     border: 1px solid black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+   
+}
+.foto3{
+    background-color: rgb(43, 6, 6);
+    height: 310px;
+    width: 40vh;
+    border: 1px solid black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    
+    
+}
+.foto4{
+    background-color: rgb(43, 6, 6);
+    height: 310px;
+    width: 40vh;
+    border: 1px solid black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+  
+}
+article div img{
+    height: 10vw;
+    width:30vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
 }
 
 /* Pie de página */
@@ -239,4 +261,3 @@ a:link, a:visited, a:active{
     font-weight: bold;
     justify-content: end;
 }
-
