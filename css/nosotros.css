@@ -154,6 +154,9 @@ footer div{
 }
 div ul li{
     list-style: none;
+    color: black;
+    text-decoration: none;
+    
 }
 
 
@@ -187,7 +190,7 @@ div ul li{
 }
 .item5{
     font-size: 20px;
-    display: grid;
+    /* display: grid; */
    
 }
 .contenedor-lista-footer{
