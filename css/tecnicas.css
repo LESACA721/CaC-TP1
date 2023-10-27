@@ -74,115 +74,66 @@ ul{
     background-color: orange  /*rgb(191, 144, 0,0.9)*/;
 }
 
-#pintura{
+#tecnicas{
     background-color: rgb(191, 144, 0,0.9);
 }
 
 /* Todo el main */
 .container{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: top;
-    height: 200vh;
+    justify-content:space-between;
+    align-items:normal;
+    height: 150vh;
     width: 100vw;
     margin-top: 55vh;
 }
 
-/* Última Cena */
+/* Sections */
 .item1{
-    background-color:black;
-    border: 5px solid rgb(191, 144, 0,0.9);
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    height: 70vh;
-}
-
-.ultima_cena{
     display: inline-flex;
     flex-wrap: wrap;
-    width: 50vw;
-    height: 70vh;
+    justify-content:space-evenly;
+    align-content: space-around;
+    height: 150vh;
+    width: 100vw;
+    margin-top: 0px;
 }
-
-.item1b{
-    display: inline-flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    background-color: black;
-    width: 30vw;
-    height: 70vh;
-    color:white;
-    font-size: 14px;
-}
-
-p1{
-    width: 30vw;
-    height: 70vh;
-    font-size: 25px;
-    padding-top: 15vh;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/* Sección inferior */
-.item2 {
+/* Párrafos de artículos */
+.articulos{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 98vw;
-    height: 90vh;
-    font-size: 30px;
-}
-
-/* Artículo "La Dama del Armiño" */
-.item2a {
-    display: inline-flex;
-    /* flex-wrap: wrap; */
-    justify-content:start;
-    align-content: flex-start;
-    width: 46vw;
-    height: 70vh;
-    background-color: rgb(230, 230, 230,0.9);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 60vh;
+    width: 40vw;
     border: 1px solid black;
 }
-.dama{
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 20vw;
-    height: 60vh;
-    margin-top: 35px;
-    margin-left: 22px;
-    margin-right: 22px;
-    justify-content: start;
-}
 
-.fondo-item2a{
+.fondo-items{
     display: inline-flex;
     flex-wrap: wrap;
-    width: 25vw;
-    height: 70vh;
+    height: 60vh;
+    width: 20vw;
     justify-content:center;
     align-items: start;
 }
 
-.DA{
-    font-size: 25px;
-    width: fit-content;
+.imagenes{
+    height: 58vh;
+    width: 19vw;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
 }
 
-/* Títulos secundarios */
 h2{
     display: inline-flex;
     flex-wrap: wrap;
     width: 20vw;
     height: fit-content;
-    font-size: 30px;
+    font-size: 25px;
     text-align:center;
+    justify-content: center;
     padding-top: 10px;
 }
 
@@ -191,30 +142,38 @@ p2{
     flex-wrap: wrap;
     width: 20vw;
     height: 60vh;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-/* Párrafos de artículos */
-p{
-    display: inline-block;
-    width: 40vw;
-    height: fit-content;
+/* Artículo "Claroscuro" */
+#artA {
+    background-color: rgb(0, 0, 0, 0.9);
 }
 
-/* Artículo "Mona Lisa" */
-.item2b {
-    background-color:rgb(230, 230, 230,0.9);
-    width: 46vw;
-    height: 70vh;
-    display: inline-flex;
-    /* flex-wrap: wrap; */
-    justify-content: start;
-    align-items: flex-start;
-    border: 1px solid black;
+#itemA{
+    color: white;
 }
+
+/* Artículo "Esfumado" */
+#artB {
+    background-color: rgb(191, 144, 0,0.9);
+}
+
+/* Artículo "Perspectiva aérea" */
+#artC {
+    background-color: rgb(0, 128, 0,0.9);
+}
+
+/* Artículo "Parragone" */
+#artD {
+    background-color: rgba(182, 6, 6, 0.9);
+}
+
+
+
 
 /* Pie de página */
 footer{
