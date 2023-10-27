@@ -25,7 +25,7 @@ h1{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     display: flex;
-    height: 40vh;
+    height: 20vh;
     width: 100vw;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -70,6 +70,7 @@ a:focus{
     background-color: rgba(212, 185, 28, 0.911);
 }
 
+
 /* Componentes de barra de navegación */
 .solapa{
     height: 8vh;
@@ -94,7 +95,7 @@ a:focus{
 }
 
 .solapa:hover{
-    background-color: orange  /*rgb(191, 144, 0,0.9)*/;
+    background-color: orange;
 }
 
 #inicio{
@@ -109,7 +110,7 @@ a:focus{
     align-items: top;
     height: 200vh;
     width: 100vw;
-    margin-top: 55vh;
+    margin-top: 40vh;
 }
 
 /* Carrousel */
@@ -203,7 +204,7 @@ h3{
 
 /* Links de pie de página */
 .flinks{
-    background-color: rgb(247, 203, 71);
+    /* background-color: rgb(247, 203, 71); */
     width: 65vw;
     height:30px;
     display: inline-flex;
