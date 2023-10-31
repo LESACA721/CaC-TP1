@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
 /* Media query for screens smaller than 600px (mobile) */
 @media (max-width: 600px) {
   h1 {
@@ -49,6 +50,7 @@
     margin-right: 20px;
   }
 }
+
 body{
     background-image: url("../img/Backround.jpg");
     background-size: cover;

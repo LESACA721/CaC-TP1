@@ -48,6 +48,7 @@
       margin-right: 20px;
     }
   }
+
 body{
     background-image: url("../img/Backround.jpg");
     background-size: cover;
@@ -303,3 +304,4 @@ a:link, a:visited, a:active{
     font-weight: bold;
     justify-content: end;
 }
+
