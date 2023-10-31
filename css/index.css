@@ -5,7 +5,49 @@
     margin: 0px;
     padding: 0px;
 }
+/* Media query for screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+    h1 {
+      font-size: 18px;
+    }
 
+    .solapa {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2px 0;
+      font-size: 10vh;
+    }
+
+    main {
+      padding: 5px;
+    }
+
+    footer {
+      padding: 10px;
+    }
+  }
+
+  /* Media query for screens between 600px and 1024px (tablet) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+      font-size: 22px;
+    }
+
+    .solapa {
+      margin-right: 15px;
+    }
+  }
+
+  /* Media query for screens larger than 1024px (computer) */
+  @media (min-width: 1025px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    .solapa {
+      margin-right: 20px;
+    }
+  }
 /* Imagen de Fondo */
 body{
     background-image: url("../img/Backround.jpg");
@@ -25,12 +67,12 @@ h1{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     display: flex;
-    height: 40vh;
+    height: 20vh;
     width: 100vw;
     margin-top: 15px;
     margin-bottom: 20px;
     font-family:'Brush Script MT',cursive;
-    font-size: 18vh;
+    font-size: 12vh;
     color: rgb(0, 0, 0) ;
     flex-wrap: wrap;
     align-content: center;
@@ -41,39 +83,16 @@ h1{
 ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
-    justify-content: space-evenly;
-    height: 8vh;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
     color: #212121;
-}
-.li{
-    height: 8vh;
-    width: 20vw;
-    background-color: #FFE966;
-    border: 1px solid black;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    background-color: rgba(212, 185, 28, 0.911);
-}
-a:active{
-    color: white;
-}
-a:focus{
-    background-color: rgba(212, 185, 28, 0.911);
 }
 
 /* Componentes de barra de navegación */
 .solapa{
-    height: 8vh;
-    width: 14vw;
+    height: 7vh;
+    width: auto;
     background-color: #FFE966;
     border: 1px solid black;
     font-size: 25px;
@@ -94,7 +113,7 @@ a:focus{
 }
 
 .solapa:hover{
-    background-color: orange  /*rgb(191, 144, 0,0.9)*/;
+    background-color: orange;
 }
 
 #inicio{
@@ -109,7 +128,7 @@ a:focus{
     align-items: top;
     height: 200vh;
     width: 100vw;
-    margin-top: 55vh;
+    margin-top: 40vh;
 }
 
 /* Carrousel */
@@ -203,7 +222,7 @@ h3{
 
 /* Links de pie de página */
 .flinks{
-    background-color: rgb(247, 203, 71);
+    /* background-color: rgb(247, 203, 71); */
     width: 65vw;
     height:30px;
     display: inline-flex;
@@ -261,4 +280,3 @@ a:link, a:visited, a:active{
     font-weight: bold;
     justify-content: end;
 }
-

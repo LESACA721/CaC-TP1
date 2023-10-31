@@ -1,11 +1,65 @@
+/* Blanqueo de formatos por defecto */
+*{
+    /* height: 0px;
+    width: 0px; */
+    margin: 0px;
+    padding: 0px;
+}
+/* Media query for screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+    h1 {
+      font-size: 18px;
+    }
+
+    .solapa {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2px 0;
+      font-size: 10vh;
+    }
+
+    main {
+      padding: 5px;
+    }
+
+    footer {
+      padding: 10px;
+    }
+  }
+
+  /* Media query for screens between 600px and 1024px (tablet) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+      font-size: 22px;
+    }
+
+    .solapa {
+      margin-right: 15px;
+    }
+  }
+
+  /* Media query for screens larger than 1024px (computer) */
+  @media (min-width: 1025px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    .solapa {
+      margin-right: 20px;
+    }
+  }
 body{
     background-image: url("../img/Backround.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-color: #FFE699;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     width: 100vw;
-    height: 200vh;
+    height: 220vh;
 }
+
 h1{
     background-color: rgba(255,230,153,0.62);
     border-top: 2px solid black;
@@ -16,7 +70,7 @@ h1{
     margin-top: 15px;
     margin-bottom: 20px;
     font-family:'Brush Script MT',cursive;
-    font-size: 18vh;
+    font-size: 12vh;
     color: rgb(0, 0, 0) ;
     flex-wrap: wrap;
     align-content: center;
@@ -25,14 +79,23 @@ h1{
 nav ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
-    justify-content: space-evenly;
-    height: 8vh;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
     color: #212121;
 }
-.li{
-    height: 8vh;
-    width: 20vw;
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+}
+
+.solapa{
+    height: 7vh;
+    width: auto;
     background-color: #FFE966;
     border: 1px solid black;
     font-size: 25px;
@@ -41,20 +104,26 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    background-color: rgba(212, 185, 28, 0.911);
-}
-a:active{
-    color: white;
-}
-a:focus{
-    background-color: rgba(212, 185, 28, 0.911);
 }
 
+.solapa:link, .solapa:visited, .solapa:active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 8vh;
+}
 
+.solapa:hover{
+    background-color: orange;
+}
+
+#nosotros{
+    background-color: rgb(191, 144, 0,0.9);
+}
+
+/* Cuerpo de página */
 section{
     background-color: rgba(255, 255, 255, 0.89);
     border: solid black;
@@ -64,6 +133,10 @@ section{
 }
 section article p{
     font-weight: bold;
+}
+
+.Quienes {
+    font-family: 'Poppins', sans-serif;
 }
 
 section img{
@@ -144,61 +217,89 @@ article div img{
     margin-right: 10px;
     align-content: center;
 }
+
+/* Pie de página */
 footer{
-    background-color: #FFE699;
-}
-footer div{
-    text-align: center;
-   font-size: 30px;
-
-}
-div ul a {
-    list-style: none;
-    color: black;
-    text-decoration: none;
-    
+    background-color: rgba(255, 230, 153, 0.9);
+    border-top: 2px solid black;
+    height: 50vh;
+    width: 100vw;
+    color: #191919 ;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.item1{
-    font-size: 20px;
+/* Títulos terciarios */
+h3{
     display: inline-flex;
-    justify-content: space-around;
-    width: 30vw;
-    list-style: none;
-
-    
-}
-.item2{
-    font-size: 20px;
-    display: inline-flex;
-    justify-content:space-around;
-    width: 30vw;
-    list-style: none;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 40vw;
+    height: 13vh;
+    font-size: 30px;
 }
 
-.item3{
-    font-size: 20px;
+/* Links de pie de página */
+.flinks{
+    /* background-color: rgb(247, 203, 71); */
+    width: 65vw;
+    height:30px;
     display: inline-flex;
-    justify-content:space-around;
-    width: 30vw;
-}
-.item4{
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: start;
     font-size: 20px;
+}
+
+/* Items de lista (apuntado a las del pie de página) */
+li{
+    width: 20vw;
+    align-items: center;
+    justify-self: center;
+    display: block;
     text-align: left;
-    width: 30vw;
 }
-.item5{
+
+/* Links del pie de pagina */
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+}
+.link-pie:hover {
+    color: rgb(0, 0, 190);
+}
+
+/* Texto inferior del pie de página */
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 5vh;
     font-size: 20px;
-    /* display: grid; */   
+    justify-content:space-around;
+    align-content:flex-end;
 }
 
-.contenedor-lista-footer{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    list-style: none;
+/* Texto de la izquierda */
+.pie-text1{
+    display: inline-flex;
+    width: 45vw;
+    font-weight: bold;
+    height: fit-content;
 }
 
-.contenedor-pie{
-    display: grid;
-    grid-template-columns: 50% 50%;
+/* Texto de la derecha */
+.pie-text2{
+    display: inline-flex;
+    width: 45vw;
+    height: fit-content;
+    font-weight: bold;
+    justify-content: end;
 }

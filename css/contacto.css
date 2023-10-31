@@ -1,11 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,200;1,900&family=Raleway:wght@400;800&display=swap');
+
 *{
-   /*  height: 0px;
-    width: 0px; */
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
     box-sizing: border-box;
+}
+/* Media query for screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .solapa {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 0;
+    font-size: 10vh;
+  }
+
+  main {
+    padding: 5px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Media query for screens between 600px and 1024px (tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .solapa {
+    margin-right: 15px;
+  }
+}
+
+/* Media query for screens larger than 1024px (computer) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .solapa {
+    margin-right: 20px;
+  }
 }
 body{
     background-image: url("../img/Backround.jpg");
@@ -15,8 +57,9 @@ body{
     background-color: #FFE699;
     display: grid;
     flex-wrap: center;
+    align-content: space-between;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
 }
 
 header h1{
@@ -27,56 +70,62 @@ header h1{
     height: 20vh;
     width: 100vw;
     margin-top: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     font-family:'Brush Script MT',cursive;
-    font-size: 18vh;
+    font-size: 12vh;
     color: rgb(0, 0, 0) ;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 }
+
 nav ul{
     background-color: rgba(255, 230, 153, 0.46);
     display: flex;
-    justify-content: space-evenly;
-    height: 8vh;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
-    font-family: 'Poppins', sans-serif;
     font-size: 900;
     color: #212121;
 }
 
-.li{
-    height: 8vh;
-    width: 20vw;
-    background-color: #FFE966;
-    border: 1px solid black;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
+a:link, a:visited, a:active{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
 }
-a:hover{
-    background-color: rgba(212, 185, 28, 0.911);
-}
-a:active{
-    color: white;
-}
-a:focus{
-    background-color: rgba(212, 185, 28, 0.911);
-}
-/* formulario */
-/*  .container{
-     width: 100%;
-  height: 100vh;
-  display: grid;
+
+.solapa{
+  height: 7vh;
+  width: auto;
+  background-color: #FFE966;
+  border: 1px solid black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
   align-items: center;
-  
-}  */
+  justify-content: center;
+}
+
+.solapa:link, .solapa:visited, .solapa:active{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 14vw;
+  height: 8vh;
+}
+
+.solapa:hover{
+  background-color: orange;
+}
+
+#contacto{
+  background-color: rgb(191, 144, 0,0.9);
+}
 
 .contact-in{
   width: 80%;
@@ -193,91 +242,89 @@ a:focus{
 .media-icons a:hover {
   transform: scale(1.3);
 }
-/* fin iconos */
-/* footer{
-    background-color: rgba(255, 230, 153, 0.9);
-    border-top: 2px solid black;
-    height: 5vh;
-    width: 100vw;
-    color: #191919 ;
-    font-size: 25px;
-    display: grid;
-    align-content: stretch;
-    align-items: end;
-    justify-content: right;
-    
-    
-} */
 
+/* Pie de página */
 footer{
-    background-color: #FFE699;
-    justify-content: space-around;
-    
+  background-color: rgba(255, 230, 153, 0.9);
+  border-top: 2px solid black;
+  height: 50vh;
+  width: 100vw;
+  color: #191919 ;
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
 }
 
-footer div{
-    text-align: center;
-   font-size: 30px;
-   justify-content: space-around;
-
-}
-div ul a {
-    list-style: none;
-    color: black;
-    text-decoration: none;
-    
-    
+/* Títulos terciarios */
+h3{
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 40vw;
+  height: 13vh;
+  font-size: 30px;
 }
 
-.item1{
-    font-size: 20px;
-    display: inline-flex;
-    justify-content: space-around;
-    width: 30vw;
-  
-
-    
-}
-.item2{
-    font-size: 20px;
-    display: inline-flex;
-    justify-content:space-around;
-    width: 30vw;
-    
-   
-}
-.item3{
-    font-size: 20px;
-    display: inline-flex;
-    justify-content:space-around;
-    width: 30vw;
-    
-}
-.item4{
-    font-size: 20px;
-    text-align: left;
-    width: 30vw;
-}
-.item5{
-    font-size: 20px;
-    display: grid;
-   
-}
-.contenedor-lista-footer{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    text-decoration: none;
-    justify-content: space-around;
-    
-    
-}
-.contenedor-pie{
-    display: grid;
-    grid-template-columns: 50% 50%;
+/* Links de pie de página */
+.flinks{
+  /* background-color: rgb(247, 203, 71); */
+  width: 65vw;
+  height:30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: start;
+  font-size: 20px;
 }
 
-.linea{
-  display: flex; 
-  justify-content: space-around;
-  margin-left: 10%;
+/* Items de lista (apuntado a las del pie de página) */
+li{
+  width: 20vw;
+  align-items: center;
+  justify-self: center;
+  display: block;
+  text-align: left;
+}
+
+/* Links del pie de pagina */
+a:link, a:visited, a:active{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+}
+.link-pie:hover {
+  color: rgb(0, 0, 190);
+}
+
+/* Texto inferior del pie de página */
+.pie{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  height: 5vh;
+  font-size: 20px;
+  justify-content:space-around;
+  align-content:flex-end;
+}
+
+/* Texto de la izquierda */
+.pie-text1{
+  display: inline-flex;
+  width: 45vw;
+  font-weight: bold;
+  height: fit-content;
+}
+
+/* Texto de la derecha */
+.pie-text2{
+  display: inline-flex;
+  width: 45vw;
+  height: fit-content;
+  font-weight: bold;
+  justify-content: end;
 }
