@@ -139,10 +139,30 @@ ul{
     margin-bottom: 10vh;
     font-size: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: flex-end;
+    justify-content: normal;
     width: 60vw;
     height: 60vh;
+}
+
+.presentacion{
+    display: inline-flex;
+    height: 52vh;
+    width: 50vw;
+    margin-left: 1.5vw;
+}
+
+.presentacion1{
+    height: 50vh;
+    width:15vw;
+}
+
+#welcome{
+    text-align: center;
+    justify-content: center;
+    width: 61vw;
 }
 
 /* Sección inferior */
