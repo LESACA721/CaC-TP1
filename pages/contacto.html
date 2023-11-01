@@ -47,12 +47,7 @@
         width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
-
   </div>
-  <!--  </div> -->
-  <!-- </section> -->
-  <!--   </main> -->
 
   <div class="home">
     <div class="media-icons" data-aos="fade-up">
@@ -62,8 +57,25 @@
     </div>
   </div>
 
+  <!-- Sección comentarios:  -->
+  <section>
+    <article>
+      <H2>Comentarios</H2>
+      <div class="perfil">
+        <img id="Foto" src="" alt="">
+      </div>
+      <h3 class="usuario">
+        <p><span class="persona" id="Name"></span></p>
+        <p> <span class="persona" id="LastName"></span></p>
+        <div id="comentario">
+          <p style="font-style: italic; align-items: center;">Disfrutamos mucho la visita. Muy recomendado, gracias por la atención!! Volveremos...</p>
+        </div>
+      </h3>
+    </article>
+  </section>
+
   <!-- FOOTER -->
-    <footer>
+  <footer>
       <h3 class="animate__animated animate__flash anima">
           Museo Leonardo Da Vinci
       </h3>
@@ -92,5 +104,21 @@
           <p class="pie-text2">Museo Leonardo Da Vinci, todos lo derechos reservados</p>
       </div>
   </footer>
+  <script>
+    async function logRandomUser() {
+      const response = await fetch("https://randomuser.me/api"); //
+      const user = await response.json();
+      console.log(user.results[0].name.first);
+      console.log(user.results[0].name.last);
+      console.log(user.results[0].picture.thumbnail);
+
+      document.querySelector(".perfil #Foto").src = user.results[0].picture.thumbnail
+      document.querySelector(".usuario #Name").textContent = user.results[0].name.first
+      document.querySelector(".usuario #LastName").textContent = user.results[0].name.last
+    }
+    
+    logRandomUser();
+
+  </script>
 </body>
 </html>
