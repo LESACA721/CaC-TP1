@@ -74,7 +74,6 @@
     </article>
   </section>
 
-  <!-- FOOTER -->
   <footer>
       <h3 class="animate__animated animate__flash anima">
           Museo Leonardo Da Vinci
@@ -112,13 +111,12 @@
       console.log(user.results[0].name.last);
       console.log(user.results[0].picture.thumbnail);
 
-      document.querySelector(".perfil #Foto").src = user.results[0].picture.thumbnail
-      document.querySelector(".usuario #Name").textContent = user.results[0].name.first
-      document.querySelector(".usuario #LastName").textContent = user.results[0].name.last
+      document.querySelector(".perfil #Foto").src = user.results[0].picture.thumbnail;
+      document.querySelector(".usuario #Name").textContent = user.results[0].name.first;
+      document.querySelector(".usuario #LastName").textContent = user.results[0].name.last;
     }
     
     logRandomUser();
-
   </script>
 </body>
 </html>
